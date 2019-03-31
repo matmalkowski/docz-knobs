@@ -1,19 +1,22 @@
 import * as React from "react";
 
 interface Props {
-  withPadding: boolean;
+  variant: "solid" | "outlined";
+  withPadding?: boolean;
   color: string;
 }
 
 const Button: React.FC<Props> = props => {
+  const { variant, withPadding, color, children } = props;
   return (
     <button
       style={{
-        backgroundColor: props.color,
-        padding: props.withPadding ? 20 : 0
+        backgroundColor: variant === "solid" ? color : "white",
+        color: variant === "outlined" ? color : "white",
+        padding: withPadding ? 20 : 0
       }}
     >
-      {props.children}
+      {children}
     </button>
   );
 };

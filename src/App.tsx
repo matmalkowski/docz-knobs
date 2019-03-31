@@ -8,8 +8,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Knobs>
-          <Button color="red" withPadding={false}>
+        <Knobs options={{ variant: ["solid", "outlined"] }}>
+          <Button color="red" withPadding variant="solid">
             Test button
           </Button>
         </Knobs>
