@@ -9,7 +9,9 @@ class App extends Component {
     return (
       <div className="App">
         <Knobs>
-          <Button color="red">Test button</Button>
+          <Button color="red" withPadding={false}>
+            Test button
+          </Button>
         </Knobs>
       </div>
     );
