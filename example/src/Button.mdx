@@ -1,0 +1,20 @@
+---
+name: Button
+route: /
+---
+
+import { Button } from "./Button";
+import Knobs from "docz-knobs";
+
+# Button and knobs
+
+<Button>Click me</Button>
+
+<Knobs
+  options={{
+    scale: ["small", "normal", "big"],
+    kind: ["primary", "secondary", "cancel", "dark", "gray"]
+  }}
+>
+  <Button>Click me</Button>
+</Knobs>
