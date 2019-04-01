@@ -1,4 +1,5 @@
 import * as React from "react";
+import styles from "./styles.css";
 
 const ComponentsContext = React.createContext({
   label: (
@@ -6,7 +7,7 @@ const ComponentsContext = React.createContext({
       React.LabelHTMLAttributes<HTMLLabelElement>,
       HTMLLabelElement
     >
-  ) => <label {...props} />,
+  ) => <label {...props} className={styles.label} />,
   checkbox: (
     props: React.DetailedHTMLProps<
       React.InputHTMLAttributes<HTMLInputElement>,
@@ -18,13 +19,13 @@ const ComponentsContext = React.createContext({
       React.InputHTMLAttributes<HTMLInputElement>,
       HTMLInputElement
     >
-  ) => <input {...props} />,
+  ) => <input {...props} className={styles.input} />,
   select: (
     props: React.DetailedHTMLProps<
       React.SelectHTMLAttributes<HTMLSelectElement>,
       HTMLSelectElement
     >
-  ) => <select {...props} />
+  ) => <select {...props} className={styles.select} />
 });
 
 export default ComponentsContext;

@@ -31,34 +31,32 @@ const Knobs: React.FC<Props> = props => {
       <div className={styles.menu}>
         {editablePropNames.map(p => (
           <div key={p}>
-            <components.label>
-              {p}
-              {typeof knobs[p] === "boolean" ? (
-                <components.checkbox
-                  checked={knobs[p]}
-                  onChange={e => setKnobs({ ...knobs, [p]: e.target.checked })}
+            <components.label>{p} </components.label>
+            {typeof knobs[p] === "boolean" ? (
+              <components.checkbox
+                checked={knobs[p]}
+                onChange={e => setKnobs({ ...knobs, [p]: e.target.checked })}
+              />
+            ) : null}
+            {typeof knobs[p] === "string" || typeof knobs[p] === "number" ? (
+              options && options[p] ? (
+                <components.select
+                  value={knobs[p]}
+                  onChange={e => setKnobs({ ...knobs, [p]: e.target.value })}
+                >
+                  {options[p].map((opt: string) => (
+                    <option value={opt} key={opt}>
+                      {opt}
+                    </option>
+                  ))}
+                </components.select>
+              ) : (
+                <components.input
+                  value={knobs[p]}
+                  onChange={e => setKnobs({ ...knobs, [p]: e.target.value })}
                 />
-              ) : null}
-              {typeof knobs[p] === "string" || typeof knobs[p] === "number" ? (
-                options && options[p] ? (
-                  <components.select
-                    value={knobs[p]}
-                    onChange={e => setKnobs({ ...knobs, [p]: e.target.value })}
-                  >
-                    {options[p].map((opt: string) => (
-                      <option value={opt} key={opt}>
-                        {opt}
-                      </option>
-                    ))}
-                  </components.select>
-                ) : (
-                  <components.input
-                    value={knobs[p]}
-                    onChange={e => setKnobs({ ...knobs, [p]: e.target.value })}
-                  />
-                )
-              ) : null}
-            </components.label>
+              )
+            ) : null}
           </div>
         ))}
       </div>
