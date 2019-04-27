@@ -1,10 +1,13 @@
-# docz-knobs
+[![NPM](https://img.shields.io/npm/v/docz-knobs.svg)](https://www.npmjs.com/package/docz-knobs)
+[![build](https://travis-ci.org/matmalkowski/docz-knobs.svg?branch=master)](https://travis-ci.org/matmalkowski/docz-)
+
+# 📝 🎛 docz-knobs
 
 > Knobs component set to use with your docz based documents!
 
-[![NPM](https://img.shields.io/npm/v/docz-knobs.svg)](https://www.npmjs.com/package/docz-knobs)
+[Docz](https://www.docz.site/) is a great `MDX` based framework for documenting your libraries and projects. With this simple `Knobs` component it enables even more features as in renders helper knobs/switches for your component to make the demo even more rebust and accessible! is a
 
-## Install
+## 🛠 Install
 
 ```bash
 yarn add docz-knobs
@@ -12,7 +15,7 @@ yarn add docz-knobs
 npm install --save docz-knobs
 ```
 
-## Usage
+## 📟 Usage
 
 Simply wrap your component in MDX file with the `Knobs` component.
 
