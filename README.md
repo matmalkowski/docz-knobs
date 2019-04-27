@@ -1,7 +1,7 @@
 [![NPM](https://img.shields.io/npm/v/docz-knobs.svg)](https://www.npmjs.com/package/docz-knobs)
 [![build](https://travis-ci.org/matmalkowski/docz-knobs.svg?branch=master)](https://travis-ci.org/matmalkowski/docz-)
 
-# 📝 🎛 docz-knobs
+# 🎛 docz-knobs
 
 > Knobs component set to use with your docz based documents!
 
