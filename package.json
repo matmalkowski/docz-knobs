@@ -9,8 +9,7 @@
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
   "engines": {
-    "node": ">=8",
-    "yarn": ">=1.13"
+    "node": ">=8"
   },
   "scripts": {
     "test": "cross-env CI=1 react-scripts-ts test --env=jsdom",
