@@ -35,6 +35,8 @@ import { Button } from "./Button";
 </Knobs>;
 ```
 
+![Example Image](https://i.imgur.com/yrAUDKC.png)
+
 For complex types you need to specify available values with options prop.
 
 ## License
