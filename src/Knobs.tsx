@@ -10,9 +10,9 @@ interface Props {
 const Knobs: React.FC<Props> = props => {
   const components = useComponents();
   const { children, options } = props;
+  console.log(children);
   const child = React.Children.toArray(children)[0];
   const compProps = (child as any).props;
-  console.log(compProps);
   const editablePropNames = Object.keys(compProps).reduce(
     (acc: string[], prop) => {
       if (prop === "children") return acc;
@@ -31,7 +31,7 @@ const Knobs: React.FC<Props> = props => {
       <div className={styles.menu}>
         {editablePropNames.map(p => (
           <div key={p}>
-            <components.label>{p} </components.label>
+            <components.label>{p}</components.label>
             {typeof knobs[p] === "boolean" ? (
               <components.checkbox
                 checked={knobs[p]}

@@ -7,7 +7,7 @@ const ComponentsContext = React.createContext({
       React.LabelHTMLAttributes<HTMLLabelElement>,
       HTMLLabelElement
     >
-  ) => <label {...props} className={styles.label} />,
+  ) => <code {...props} className={styles.label} />,
   checkbox: (
     props: React.DetailedHTMLProps<
       React.InputHTMLAttributes<HTMLInputElement>,
