@@ -1,15 +1,15 @@
 language: node_js
 node_js:
-  - "8"
+- '8'
 before_script:
-  - yarn install
+- yarn install
 script:
-  - yarn build
+- yarn build
 deploy:
   provider: npm
-  email: monkey3310@gmail.com
+  email: mac.malkowski@gmail.com
   api_key:
-    secure: fF4bZ/RJ/5fKDYq8WcLgkjUzUt/FmukDaIMzj8+s8kg+d3xxsQkV9h+RfL0x/zXlZJDSylyIYL8X0vbxeni7ehEJXr1xVJIHw1XCQHk1jumHXu4tpjFE6u32yBGcbBbLYqlQEPsLxTJsIPZaJnXsUOjRXv2xubL7GWkI1TroUaSRLYqcDzcAFJcwVaqJRrHO7v9LC/3epbG5YiJQby8kv3YZhez1NYhQ21MjKWaK2o0gQGhRLrnU68gKdC4fh/l+hPAl45D+0uPpG30HwEE4dNkIxcXzXfLF3oC7bmIMH6lUkLalR5XlsLl9EHB+cv6t11V4c0/UxhBD0G8pfdwOtcN9IkAoK71xfC/fHbKy3nqva981H/IG6IvKKSegtPXh7F2v+5KeQ95SVyhQ8SyM1BDXswITqNHgSTT9FGFOinOVZKcZJZ/6cmVRsNW6mCEmyYs1W5iiV4Eiy6WlO5WHlVRr0pyOKKTemczXUOyRe7r8ngSjmGjm3UimYh3qqM+bltWQPTSCmbbCE27qmc/W5Z+kKfmzIYmIH4wzmeS44rsqsKKnwnhp2oMRtsukrrWv7vgFOICDW46cW9snrQ4PPCzN4OKI56HCcaDzj5jwgiNlH+i6znByBMnV2dyUtRrG0e144jpyRkXDfG/qLz8e7Mok7+fWx6exuQUjQUSD2f4=
+    secure: KECGASi+Ro+uqw8CCwfO7cki+CIf/4juRX/yCACzzkVuBj37J2YTfWmVr/eWKkf3G4aItl8L9pEP0ki6D87s2esDOnZuqGHyKqGX4aL99piJWEu4kWANJLF8R9ftE2CkvKww5KWtpk3fA1jKMtgJDhpZJL+SbIT8qkoYeqGd5f8LoI9FcpZRQu8wuNvyMDw/dGO1vRQ54z/u7USciUPO72AvdsbZ++vPrugeB9avHVNMaQ+lcriqkpzlVC14fvDfWe9wBLbMe+A8Z9M+oZ+PYacoC7erlsoRmbe5og9eqPl7d4Zy15fmcIqfmnl8edAHr3ZixRHKUsCTLu1JeViIHBl417Eit3e/bGY3N4CzBY7IHZ2AY3lyV7anhRwRwgiV2Nn92eg/WYK99KKHnSEVRL8S6Ezo85+WMLrQUwRPjah7duRQ4De+LXRctyom0pSPUNysVifd2eba66dk8HzlMRFqoQVXKAxGDBZWhDnX4sMQSKx6fNK6DsUmBsUhEVR3Mfy5RDO9lj5WYrIVwxvF/N2rFX6LHELKmdaRnyNckFHqhlyB1urWZygRwNV5N1W8TpO9bEeuhOh8LcNDphFKMxsjXNKqvQZ5jw4QLodDvjA4lqhVpVSlAW5krcZG3PDKdc7GzCvft83CNo1zuGmPqoNoN0QWvhQaTINRpRSas3M=
   on:
     branch: master
   skip_cleanup: true
